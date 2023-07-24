@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import { Heading } from '@chakra-ui/react'
 const TextAnimation = () => {
   const phrases = [
     "Olá, eu sou o David e estou empolgado em compartilhar meu trabalho com você!",
@@ -20,24 +20,32 @@ const TextAnimation = () => {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 1 }}
-      style={{display:'flex', justifyContent:'center', alignItems:'center', margin:'40vh auto', fontSize:'30px'}}
-    >
-      <motion.p
-        key={currentPhraseIndex}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        onAnimationComplete={nextPhrase}
-        transition={{ duration: 3 }}
-      >
-        {phrases[currentPhraseIndex]}
-      </motion.p>
-    </motion.div>
+    
+    <div className='textAnimation' style={{ maxHeight:'100vh',display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        {/* <div style={{ position: 'absolute', top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+            <Heading>Seja Bem vindo(a)!</Heading>
+        </div> */}
+        <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 1 }}
+        style={{ fontSize: '30px' }}
+        >
+        <motion.p
+            key={currentPhraseIndex}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onAnimationComplete={nextPhrase}
+            transition={{ duration: 3 }}
+        >
+            {phrases[currentPhraseIndex]}
+        </motion.p>
+        </motion.div>
+  </div>
+  
+
   );
 };
 
