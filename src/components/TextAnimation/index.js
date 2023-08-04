@@ -21,10 +21,7 @@ const TextAnimation = () => {
 
   return (
     
-    <div className='textAnimation' style={{ maxHeight:'100vh',display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-        {/* <div style={{ position: 'absolute', top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-            <Heading>Seja Bem vindo(a)!</Heading>
-        </div> */}
+    <div className='textAnimation' style={{ maxHeight:'100vh',display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>       
         <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

@@ -8,7 +8,7 @@
 
 .home_down:hover{
     cursor: pointer;
-    background-color: #fff;
+     transform: scale(1.1);
     color: #000;
      
 }
