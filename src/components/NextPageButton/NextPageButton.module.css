@@ -1,0 +1,6 @@
+.home_down:hover{
+    cursor: pointer;
+     transform: scale(1.1);
+    color: #000;
+     
+}
