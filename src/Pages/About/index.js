@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from 'framer-motion';
-
+import styles from './AboutStyles.module.css'
+import NextPageButton from "../../components/NextPageButton";
 
 const About = ()=>{
     return(
@@ -9,7 +10,11 @@ const About = ()=>{
             animate={{ opacity: 1, y: 0 }}         
             transition={{ duration: 0.5 }}
         >
-            Sobre mim
+            <div className={styles.container}>
+                Sobre mim
+            </div>
+
+            <NextPageButton nextRoute='projects'/>
         </motion.div>
     )
 }

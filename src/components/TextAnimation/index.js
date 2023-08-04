@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heading } from '@chakra-ui/react'
+
 const TextAnimation = () => {
   const phrases = [
     "Olá, eu sou o David e estou empolgado em compartilhar meu trabalho com você!",
