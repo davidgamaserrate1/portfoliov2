@@ -1,44 +1,25 @@
 import React from "react";
-import {
-    Drawer,
-    DrawerBody,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerOverlay,
-    DrawerContent,
-    DrawerCloseButton,
-  } from '@chakra-ui/react'
-
-
+import styles from './SideBar.module.css'
+import picture from '../../assets/profile.jpg'
 const SideBar = () =>{
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const [placement, setPlacement] = React.useState('left')
-
+ 
   return (
-    <>
-      <RadioGroup defaultValue={placement} onChange={setPlacement}>
-        <Stack direction='row' mb='4'>
-          <Radio value='top'>Top</Radio>
-          <Radio value='right'>Right</Radio>
-          <Radio value='bottom'>Bottom</Radio>
-          <Radio value='left'>Left</Radio>
-        </Stack>
-      </RadioGroup>
-      <Button colorScheme='blue' onClick={onOpen}>
-        Open
-      </Button>
-      <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerHeader borderBottomWidth='1px'>Basic Drawer</DrawerHeader>
-          <DrawerBody>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
-    </>
+    <div className={styles.sideBarOut}>
+        
+        <div className={styles.sideBody}>
+          <img className={styles.picture} src={picture}/>             
+          <div className={styles.informations}>             
+            <div className={styles.name}>David Serrate</div>
+            <div className={styles.name}>Software Engeener</div>
+            <div className={styles.name}>
+              <span class="material-symbols-outlined">pin_drop</span>
+                Campo Grande, MS
+            </div>
+          </div>
+
+
+        </div>  
+    </div>
   )
 }
 

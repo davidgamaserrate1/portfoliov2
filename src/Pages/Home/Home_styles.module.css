@@ -1,0 +1,11 @@
+.home{
+     width: 80vw;
+     color: #fff;
+     background-image: linear-gradient(to right, #333333 0%, black 100%);
+}
+
+
+.homeContainer{
+     display: flex;
+     background-image: linear-gradient(to right, #333333 30%, black 80%);
+}

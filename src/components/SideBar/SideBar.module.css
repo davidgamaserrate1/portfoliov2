@@ -1,0 +1,36 @@
+.sideBarOut{    
+    height: 50vh;
+    width: 20vw;
+    margin: 5vh 5vh;
+    z-index: 9999;
+   
+}
+
+.sideBody{
+    height: 100%;
+    width: 100%;    
+    display: flex;
+    
+    background: beige; 
+}
+
+.informations{
+    width: 100%; 
+}
+
+.picture{     
+  
+    width:100px;
+    height: 100px;
+
+    
+     
+     
+}
+
+.name{
+    display: flex;
+    justify-content: center;      
+     margin: auto auto;
+    width: 100%;
+}
