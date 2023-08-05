@@ -1,36 +1,69 @@
 .sideBarOut{    
-    height: 50vh;
+    height: 90vh;
     width: 20vw;
-    margin: 5vh 5vh;
-    z-index: 9999;
-   
+    margin: auto 2.5vw;
+    
 }
 
 .sideBody{
+    border-radius: 20px;
     height: 100%;
     width: 100%;    
     display: flex;
-    
-    background: beige; 
+    flex-wrap: wrap;
+    background: #fff; 
+    border: 1px solid #f0f0f0;
+     
+     font-family: 'Saira', sans-serif;
+     font-weight: bold;
+   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .informations{
     width: 100%; 
+    height: 100%;
+     
 }
 
-.picture{     
-  
-    width:100px;
-    height: 100px;
-
-    
-     
-     
+.picture{  
+    width:200px;
+    height: 200px;
+    margin: 45px auto;
+    border-radius: 50%;     
 }
 
 .name{
     display: flex;
-    justify-content: center;      
-     margin: auto auto;
+    justify-content: center;     
+     
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+    margin: 25px auto;
+    width: 80%;
+    padding: 8px;
+    border-radius: 20px;
+    background: #08090a ;
+    color: #fff;
+     
+}
+.socials{
+    display: flex;
+    justify-content: center; 
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+    width: 80%;
+    padding: 8px;
+    border-radius: 20px;
+    gap: 5px;
+    color: #fff;     
+}
+
+
+.contactme{
+    color: #403030;
     width: 100%;
+    height: 100%;
+    margin: auto auto;
+    
 }

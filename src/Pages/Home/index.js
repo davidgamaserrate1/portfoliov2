@@ -10,19 +10,14 @@ const Home = () => {
  
   return (
     <div className={styles.homeContainer}>
-      <SideBar/>  
-      
+      <SideBar/>        
+      <div className={styles.home}>
       <motion.div
-          style={{background:'linear-gradient(to right, #333333 0%, black 100%)'}}
-          
-          
-          
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}         
           transition={{ duration: 0.5 }}    
-          className={styles.homeContainer} 
+          className={styles.homeContainer2} 
           >
-        <div className={styles.home}>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -31,10 +26,10 @@ const Home = () => {
             style={{ fontSize: '30px', textAlign: 'center' }}
             >
             <TextAnimation />
-          </motion.div>          
-          <NextPageButton nextRoute='/about'/>
-        </div>
+            </motion.div>          
+            <NextPageButton nextRoute='/about'/>
       </motion.div>
+        </div>
     </div>
   )
 }

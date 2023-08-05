@@ -1,7 +1,6 @@
 .container{
-    height: 100vh;
-    width: 100vh;
+    height: 100vh;     
     width: 100vw;
-    background-image: linear-gradient(to right, #333333 0%, black 100%);
+    background-color: rgba(23, 38, 122, 0.133);
      color: #fff;
 }
