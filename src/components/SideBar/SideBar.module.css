@@ -77,7 +77,7 @@
 @media (min-width:700px) {
     
     .sideBody{
-        border-radius: 20px;
+        
         display: flex;
         flex-wrap: wrap;
         background: #fff;       

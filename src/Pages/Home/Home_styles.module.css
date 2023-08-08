@@ -20,6 +20,19 @@
     display: none;
    }
 
+   /* sobre mim */
+   .about_me{
+     
+    padding-left: 405px;
+    background-color: red;
+    width: calc(100vw -400px);
+    font-size: 220px;
+    color: #000;
+    height: 100vh;
+    display: flex;
+   }
+
+
    @media (min-width:700px) {
     .container {
       display: flex;
@@ -32,7 +45,7 @@
       display: inline;
      }
     .content {
-      flex: 1;
+       
       display: flex;
       justify-content: center;
       align-items: center;

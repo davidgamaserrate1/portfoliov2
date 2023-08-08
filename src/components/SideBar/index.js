@@ -3,7 +3,7 @@ import styles from './SideBar.module.css'
 import picture from '../../assets/profile.jpg'
 import { SocialIcon } from 'react-social-icons';
 import NextPageButton from "../NextPageButton";
-   <NextPageButton nextRoute='/about'/>
+   
 const SideBar = () =>{
  
   return (
