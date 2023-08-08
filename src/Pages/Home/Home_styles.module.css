@@ -3,6 +3,7 @@
      align-items: center;
      justify-content: center;
      height: 100vh;
+     max-width: 100vw;
    }
    
    .content {
@@ -12,5 +13,27 @@
      align-items: center;
      background: #08090a;
      color: #fff;
+     margin-left: 400px;
    }
    
+
+
+   @media (min-width:700px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      max-width: 100vw;
+    }
+    
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #08090a;
+      color: #fff;
+      margin-left: 400px;
+    }
+   }

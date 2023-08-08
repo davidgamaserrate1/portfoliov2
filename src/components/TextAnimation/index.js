@@ -22,7 +22,7 @@ const TextAnimation = () => {
   return (
     
     <div className='textAnimation' 
-      style={{ height:'100vh',display: 'flex', justifyContent: 'center', alignItems: 'center',  width:'100%' }}>       
+      style={{ height:'100vh',display: 'flex', justifyContent: 'center', alignItems: 'center',  width:'100%', padding:'20px', flexWrap:'wrap' }}>       
         <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

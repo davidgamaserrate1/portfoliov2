@@ -4,6 +4,8 @@ import styles from './NextPageButton.module.css'
 import { useNavigate } from "react-router-dom";
 
 const NextPageButton =(props)=>{
+       
+    
     const navigation = useNavigate()
     
     const naviagateNextPage = () =>{
@@ -11,13 +13,9 @@ const NextPageButton =(props)=>{
     }
   
     return(
-        <div className={styles.home_down} > 
-            <ChevronDownIcon w={10} h={10} color={'#fff'} 
-                onClick={()=>{naviagateNextPage(props.nextRoute)}} 
-            />
-            {/* <ChevronDownIcon w={10} h={10} color={'#fff'} 
-                onClick={()=>{naviagateNextPage(props.nextRoute)}} 
-            /> */}
+        <div className={styles.home_down}> 
+            <ChevronDownIcon w={10} h={10}   onClick={()=>{naviagateNextPage(props.nextRoute)}} 
+            />            
         </div>
     )
 }

@@ -28,7 +28,7 @@ const Home = () => {
               <TextAnimation />
             </motion.div>          
           </motion.div>
-            <NextPageButton nextRoute='/about'/>
+            <NextPageButton nextRoute='/about'  />
         </div>
       </div>
     </div>

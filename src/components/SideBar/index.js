@@ -2,7 +2,8 @@ import React from "react";
 import styles from './SideBar.module.css'
 import picture from '../../assets/profile.jpg'
 import { SocialIcon } from 'react-social-icons';
- 
+import NextPageButton from "../NextPageButton";
+   <NextPageButton nextRoute='/about'/>
 const SideBar = () =>{
  
   return (
@@ -23,6 +24,7 @@ const SideBar = () =>{
               <SocialIcon url="https://api.whatsapp.com/send?phone=5567991673073&text=Ol%C3%A1,%20vim%20pelo%20seu%20portf%C3%B3lio!" />
               <SocialIcon url="https://www.linkedin.com/in/david-gama-dev/" />
               <SocialIcon url="https://www.instagram.com/_david.gama/" />
+              <NextPageButton nextRoute='/about' color='#000' />
             </div>
           </div>
 
