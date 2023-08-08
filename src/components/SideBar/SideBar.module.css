@@ -80,22 +80,21 @@
         font-family: 'Saira', sans-serif;
         font-weight: bold;
         width: 400px;
-        height: 100vh;
+        max-height: 100vh;
+        justify-content: center;
+         
     }
     
     .informations{
         width: 100%;               
-         
-    }
-    .sideBarOut{
         max-height: 100vh;
-     max-width: 100vw;
     }
+   
     
     .picture{  
         width:200px;
         height: 200px;
-        margin: 45px auto;
+        margin: auto auto;
         border-radius: 50%;     
         padding: 10px;
         box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
