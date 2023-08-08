@@ -11,12 +11,13 @@ const NextPageButton =(props)=>{
     }
   
     return(
-        <div className={styles.home_down} 
-            style={{ position: 'absolute', bottom: '5%', left: '50%', transform: 'translateX(-50%)' }}
-            > 
+        <div className={styles.home_down} > 
             <ChevronDownIcon w={10} h={10} color={'#fff'} 
                 onClick={()=>{naviagateNextPage(props.nextRoute)}} 
             />
+            {/* <ChevronDownIcon w={10} h={10} color={'#fff'} 
+                onClick={()=>{naviagateNextPage(props.nextRoute)}} 
+            /> */}
         </div>
     )
 }

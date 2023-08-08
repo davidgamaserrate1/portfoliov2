@@ -1,8 +1,16 @@
- 
+
+.home_down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: calc(50vw - 250px);
+    bottom: 10px;
+    position: fixed;
+   
+  
+    
+}
 .home_down:hover{
     cursor: pointer;
      transform: scale(1.1);
-     
-    
-     
 }

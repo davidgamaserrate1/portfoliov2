@@ -20,9 +20,9 @@ const SideBar = () =>{
             </div>
             <div className={styles.socials}>
             <div className={styles.contactme}>Contate-me</div>
-              <SocialIcon url="https://twitter.com/jaketrent" />
-              <SocialIcon url="https://www.linkedin.com/" />
-              <SocialIcon url="https://www.instagram.com/" />
+              <SocialIcon url="https://api.whatsapp.com/send?phone=5567991673073&text=Ol%C3%A1,%20vim%20pelo%20seu%20portf%C3%B3lio!" />
+              <SocialIcon url="https://www.linkedin.com/in/david-gama-dev/" />
+              <SocialIcon url="https://www.instagram.com/_david.gama/" />
             </div>
           </div>
 
