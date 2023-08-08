@@ -25,10 +25,12 @@ const Home = () => {
               transition={{ duration: 1, ease: "easeOut" }} 
               style={{ fontSize: '30px', textAlign: 'center' }}
             >
+             <div className={styles.textAnimationContent}>
               <TextAnimation />
+            <NextPageButton nextRoute='/about'  />
+             </div>
             </motion.div>          
           </motion.div>
-            <NextPageButton nextRoute='/about'  />
         </div>
       </div>
     </div>

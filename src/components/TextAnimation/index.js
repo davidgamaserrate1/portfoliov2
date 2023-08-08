@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import style from './TextAnimation.module.css'
 const TextAnimation = () => {
   const phrases = [
     "Olá, eu sou o David e estou empolgado em compartilhar meu trabalho com você!",
@@ -21,8 +21,8 @@ const TextAnimation = () => {
 
   return (
     
-    <div className='textAnimation' 
-      style={{ height:'100vh',display: 'flex', justifyContent: 'center', alignItems: 'center',  width:'100%', padding:'20px', flexWrap:'wrap' }}>       
+    <div className={style.textAnimation}
+      style={{ height:'100vh',display: 'flex', justifyContent: 'center', alignItems: 'center',  width:'100%' , flexWrap:'wrap' }}>       
         <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
